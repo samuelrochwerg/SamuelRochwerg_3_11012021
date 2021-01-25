@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Shrikhand', cursive;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 425px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.fas {
+  margin-right: 20px;
+}
+
+h1 {
+  color: #9356DC;
+}
+
+.logo {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 170px;
+}
+
+.search-city {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.section_reservez {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 40px 40px;
+}
+
+.réservez {
+  font-weight: bold;
+  font-size: 25px;
+  max-width: 232px;
+}
+
+.découvrez {
+  max-width: 313px;
+}
+
+.button_explorer {
+  background-color: #FF79DA;
+  padding: 22px 20px 16px 20px;
+  border-radius: 30px;
+  max-width: 224px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
