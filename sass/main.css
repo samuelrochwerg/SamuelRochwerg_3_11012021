@@ -17,7 +17,7 @@ a {
 }
 
 .container {
-  max-width: 425px;
+  max-width: 345px;
 }
 
 section {
@@ -32,6 +32,7 @@ h1 {
   color: #9356DC;
 }
 
+/*Header*/
 .logo {
   margin: 20px 0px 20px 0px;
   display: flex;
@@ -43,6 +44,7 @@ h1 {
   max-width: 170px;
 }
 
+/*Onglet recherche de la ville*/
 .search-city {
   display: flex;
   justify-content: center;
@@ -54,6 +56,7 @@ h1 {
 .section_reservez {
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-color: #f6f6f6;
   padding: 40px 40px;
 }
@@ -61,20 +64,23 @@ h1 {
 .réservez {
   font-weight: bold;
   font-size: 25px;
-  max-width: 232px;
-}
-
-.découvrez {
-  max-width: 313px;
 }
 
 .button_explorer {
   background-color: #FF79DA;
   padding: 22px 20px 16px 20px;
   border-radius: 30px;
-  max-width: 224px;
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+.choice_restaurant {
+  margin: 0 20px 0 32px;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  padding: 27px 74px 27px 0px;
+  text-align: center;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
