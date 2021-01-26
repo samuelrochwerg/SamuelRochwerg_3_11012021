@@ -4,10 +4,15 @@ $colour-tertiary: #99E2D0;
 
 * {
     padding: 0;
-    margin: 0;;
+    margin: 0;
+    ;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Shrikhand', cursive;
 }
 
@@ -38,18 +43,18 @@ h1 {
 
 /*Header*/
 
-.logo
-{
+.logo {
     margin: 20px 0px 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
         max-width: 170px;
     }
 }
 
-/*Onglet recherche de la ville*/ 
+/*Onglet recherche de la ville*/
 
 .search-city {
     display: flex;
@@ -74,19 +79,32 @@ h1 {
 
 .button_explorer {
     background-color: $colour-secondary;
-    padding: 22px 20px 16px 20px;
+    padding: 22px 20px 22px 20px;
     border-radius: 30px;
     text-align: center;
     color: white;
     font-weight: bold;
+    font-size: 20px;
+}
+
+/*Fonctionnement*/
+
+.section_fonctionnement {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+        h2 {
+            margin: 0 0 30px 20px;
+        }
 }
 
 .choice_restaurant {
-    margin: 0 20px 0 32px;
+    margin: 0 20px 20px 32px;
     font-weight: bold;
     background-color: #F6F6F6;
     padding: 27px 74px 27px 0px;
     text-align: center;
     border-radius: 20px;
-
 }

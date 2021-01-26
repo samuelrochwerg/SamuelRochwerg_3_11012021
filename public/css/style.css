@@ -4,12 +4,16 @@
   margin: 0;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Shrikhand', cursive;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Shrikhand", cursive;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -39,7 +43,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 .logo img {
   max-width: 170px;
 }
@@ -68,19 +71,33 @@ h1 {
 
 .button_explorer {
   background-color: #FF79DA;
-  padding: 22px 20px 16px 20px;
+  padding: 22px 20px 22px 20px;
   border-radius: 30px;
   text-align: center;
   color: white;
   font-weight: bold;
+  font-size: 20px;
+}
+
+/*Fonctionnement*/
+.section_fonctionnement {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.section_fonctionnement h2 {
+  margin: 0 0 30px 20px;
 }
 
 .choice_restaurant {
-  margin: 0 20px 0 32px;
+  margin: 0 20px 20px 32px;
   font-weight: bold;
   background-color: #F6F6F6;
   padding: 27px 74px 27px 0px;
   text-align: center;
   border-radius: 20px;
 }
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=style.css.map */
