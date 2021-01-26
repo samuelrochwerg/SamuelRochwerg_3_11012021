@@ -1,6 +1,6 @@
-$colour-primary: #9356DC;
-$colour-secondary: #FF79DA;
-$colour-tertiary: #99E2D0;
+@import "./utils/variables";
+@import "./base/base";
+@import "./layouts/layouts.scss";
 
 * {
     padding: 0;
@@ -8,24 +8,12 @@ $colour-tertiary: #99E2D0;
     ;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Shrikhand', cursive;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-}
-
 a {
     text-decoration: none;
 }
 
 .container {
-    max-width: 345px;
+    max-width: 338px;
 }
 
 section {
@@ -41,18 +29,9 @@ h1 {
     color: $colour-primary;
 }
 
-/*Header*/
 
-.logo {
-    margin: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    img {
-        max-width: 170px;
-    }
-}
+
 
 /*Onglet recherche de la ville*/
 
@@ -89,7 +68,7 @@ h1 {
 
 /*Fonctionnement*/
 
-.section_fonctionnement {
+.function-booking{
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -101,10 +80,32 @@ h1 {
 }
 
 .choice_restaurant {
-    margin: 0 20px 20px 32px;
+    margin: 0 20px 20px 40px;
     font-weight: bold;
     background-color: #F6F6F6;
-    padding: 27px 74px 27px 0px;
+    padding: 30px 0;
+    margin-left: 20px;
     text-align: center;
     border-radius: 20px;
+    position: relative;
+}
+.choice_number {
+    width: 30px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: $colour-primary;
+    color: #FFF;
+    position: absolute;
+    top: 40%;
+    left: -4%;
+}
+.section_restaurants {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.card_restaurant {
+    border: 3px solid white;
 }
