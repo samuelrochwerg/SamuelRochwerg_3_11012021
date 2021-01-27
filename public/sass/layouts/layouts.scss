@@ -10,7 +10,27 @@ header
         align-items: center;
 
             img {
-                max-width: 100%;
+                max-width: 168px;
             }
 }
+}
+
+/*Footer*/
+
+footer {
+    background-color: #353535;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 25px;
+        img {
+            max-width: 150px;
+            color: #FFF;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            color: #e6e6e6;
+        }
 }
