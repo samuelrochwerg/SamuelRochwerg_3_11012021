@@ -84,6 +84,7 @@ h1 {
   text-align: center;
   background-color: #f6f6f6;
   padding: 40px 40px;
+  margin-bottom: 50px;
 }
 .section-explore__book {
   font-weight: bold;
@@ -101,12 +102,17 @@ h1 {
 }
 
 /*Fonctionnement*/
+.section-function__titre {
+  margin-left: 22px;
+}
+
 .section-function {
   font-weight: bold;
   font-size: 15px;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .section-function h2 {
   margin: 0 0 30px 0;
@@ -115,13 +121,13 @@ h1 {
   margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
-  padding: 30px 0;
+  padding: 30px 70px 30px 18px;
   margin-left: 20px;
   text-align: center;
   border-radius: 20px;
   position: relative;
   font-family: "Roboto", sans-serif;
-  max-width: 375px;
+  width: 300px;
 }
 .section-function .section-function__choice--number {
   width: 18px;
@@ -138,8 +144,11 @@ h1 {
 /*Restaurants*/
 .section-restaurants {
   background-color: #f6f6f6;
+}
+.section-restaurants__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .section-restaurants__title {
   margin: 20px 0 10px 10px;
@@ -151,6 +160,11 @@ h1 {
   position: relative;
   max-width: 330px;
   min-width: 280px;
+}
+@media screen and (min-width: 700px) {
+  .section-restaurants__card {
+    margin-right: 25px;
+  }
 }
 .section-restaurants__card img {
   width: 100%;
