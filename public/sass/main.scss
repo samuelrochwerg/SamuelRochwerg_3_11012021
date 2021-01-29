@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/base";
 @import "./layouts/layouts.scss";
+@import "./pages/menupages.scss";
 
 * {
     padding: 0;
@@ -118,6 +119,7 @@ h1 {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
         }
         &__title {
             margin: 20px 0 10px 10px;
