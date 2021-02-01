@@ -1,5 +1,69 @@
+.container-all {
+    max-width: 2560px;
+}
 .photo__restaurant {
     img {
-        width: 320px;
+        width: 100%;
+        max-height: 250px;
     }
+      }
+.card__title {
+    font-family: 'Shrikhand', cursive;
+}
+.fa-heart:before {
+    margin-left: 20px;
+}
+.section__card {
+    background-color: #F6F6F6;
+    padding: 36px 21px;
+        .far {
+            align-self: flex-end;
+        }
+        h2 {
+            margin-bottom: 35px;
+        }
+}
+.entrees {
+    margin-bottom: 27px;
+}
+.section__carte--entrees {
+        h2 {
+            font-weight: normal;
+        }
+}
+.section__carte--entrees--contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    
+        &--dish {
+            width: 300px;
+            margin-bottom: 15px;
+            background-color: #FFF;
+            box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+            border-radius: .75rem;
+            max-width: 100%;
+            padding: 14px 20px 14px 10px;
+            display: flex;
+            justify-content: space-between;
+                &--price {
+                    align-self: flex-end;
+                    font-weight: bold;
+                }
+        }
+}
+.header_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        h4 {
+            font-weight: normal;
+        }
+}
+.section__bouton--commander {
+    display: block;
+    margin: 50px 0;
+    text-align: center;
 }

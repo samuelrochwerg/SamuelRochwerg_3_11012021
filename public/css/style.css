@@ -1,3 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-all {
+  max-width: 2560px;
+}
+
 h2,
 h3,
 h4,
@@ -5,6 +18,10 @@ h5,
 h6,
 p {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
 }
 
 /*Header*/
@@ -37,32 +54,13 @@ footer {
 footer h3 {
   margin: 0 0 10px 20px;
   color: #e6e6e6;
+  font-weight: normal;
 }
 footer .footer-logo {
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
+  font-weight: normal;
+  font-size: 20px;
   margin-bottom: 15px;
-}
-
-.photo__restaurant img {
-  width: 320px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container-all {
-  max-width: 2560px;
-}
-
-section {
-  padding: 50px 21px;
 }
 
 .fas {
@@ -80,6 +78,7 @@ h1 {
   background-color: #eaeaea;
   padding: 20px 0;
   font-weight: bold;
+  width: 100%;
 }
 
 .section-explore {
@@ -163,8 +162,14 @@ h1 {
   background-color: white;
   margin-bottom: 18px;
   position: relative;
-  max-width: 330px;
+  max-width: 280px;
   min-width: 280px;
+}
+@media screen and (min-width: 375px) {
+  .section-restaurants__card {
+    max-width: 330px;
+    min-width: 280px;
+  }
 }
 @media screen and (min-width: 700px) {
   .section-restaurants__card {
@@ -196,6 +201,80 @@ h1 {
   position: absolute;
   top: 1rem;
   right: 0.75rem;
+}
+
+.container-all {
+  max-width: 2560px;
+}
+
+.photo__restaurant img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.card__title {
+  font-family: "Shrikhand", cursive;
+}
+
+.fa-heart:before {
+  margin-left: 20px;
+}
+
+.section__card {
+  background-color: #F6F6F6;
+  padding: 36px 21px;
+}
+.section__card .far {
+  align-self: flex-end;
+}
+.section__card h2 {
+  margin-bottom: 35px;
+}
+
+.entrees {
+  margin-bottom: 27px;
+}
+
+.section__carte--entrees h2 {
+  font-weight: normal;
+}
+
+.section__carte--entrees--contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 250px;
+}
+.section__carte--entrees--contenu--dish {
+  width: 300px;
+  margin-bottom: 15px;
+  background-color: #FFF;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  max-width: 100%;
+  padding: 14px 20px 14px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.section__carte--entrees--contenu--dish--price {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header_menu h4 {
+  font-weight: normal;
+}
+
+.section__bouton--commander {
+  display: block;
+  margin: 50px 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
