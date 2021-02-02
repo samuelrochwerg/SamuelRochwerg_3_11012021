@@ -106,7 +106,7 @@ h1 {
 
 /*Fonctionnement*/
 .section-function__titre {
-  margin-left: 22px;
+  margin: 0 0 20px 22px;
 }
 
 .section-function {
@@ -116,6 +116,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 15px;
 }
 .section-function h2 {
   margin: 0 0 30px 0;
@@ -124,13 +125,14 @@ h1 {
   margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
-  padding: 30px 70px 30px 18px;
+  padding: 30px 50px 30px 18px;
   margin-left: 20px;
   text-align: center;
   border-radius: 20px;
   position: relative;
   font-family: "Roboto", sans-serif;
   width: 300px;
+  max-height: 78px;
 }
 .section-function .section-function__choice--number {
   width: 18px;
@@ -155,7 +157,7 @@ h1 {
   justify-content: center;
 }
 .section-restaurants__title {
-  margin: 20px 0 10px 10px;
+  padding: 50px 0 10px 22px;
 }
 .section-restaurants__card {
   border-radius: 20px;
@@ -210,6 +212,7 @@ h1 {
 .photo__restaurant img {
   width: 100%;
   max-height: 250px;
+  object-fit: cover;
 }
 
 .card__title {
@@ -218,6 +221,13 @@ h1 {
 
 .fa-heart:before {
   margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__global {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .section__card {
@@ -237,6 +247,7 @@ h1 {
 
 .section__carte--entrees h2 {
   font-weight: normal;
+  font-size: 20px;
 }
 
 .section__carte--entrees--contenu {
@@ -246,9 +257,21 @@ h1 {
   align-content: center;
   width: 250px;
 }
+@media screen and (min-width: 375px) {
+  .section__carte--entrees--contenu {
+    margin-right: 50px;
+    min-width: 250px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section__carte--entrees--contenu {
+    margin-right: 50px;
+  }
+}
 .section__carte--entrees--contenu--dish {
   width: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   background-color: #FFF;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
@@ -272,9 +295,9 @@ h1 {
 }
 
 .section__bouton--commander {
-  display: block;
-  margin: 50px 0;
+  padding: 30px 0 80px 0;
   text-align: center;
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */

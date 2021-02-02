@@ -5,6 +5,7 @@
     img {
         width: 100%;
         max-height: 250px;
+        object-fit: cover;
     }
       }
 .card__title {
@@ -12,6 +13,13 @@
 }
 .fa-heart:before {
     margin-left: 20px;
+}
+.section__global {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        
 }
 .section__card {
     background-color: #F6F6F6;
@@ -29,6 +37,7 @@
 .section__carte--entrees {
         h2 {
             font-weight: normal;
+            font-size: 20px;
         }
 }
 .section__carte--entrees--contenu {
@@ -37,10 +46,18 @@
     justify-content: center;
     align-content: center;
     width: 250px;
+    @media screen and (min-width: 375px) {
+        margin-right: 50px;
+        min-width: 250px;
+        width: 100%;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-right: 50px;
+    }
     
         &--dish {
             width: 300px;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             background-color: #FFF;
             box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
             border-radius: .75rem;
@@ -63,7 +80,7 @@
         }
 }
 .section__bouton--commander {
-    display: block;
-    margin: 50px 0;
+    padding: 30px 0 80px 0;
     text-align: center;
+    background-color: #F6F6F6;
 }
