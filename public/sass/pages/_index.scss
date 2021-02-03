@@ -19,7 +19,7 @@ h1 {
     width: 100%;
 }
 
-.section-explore {
+.presentation {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -44,11 +44,11 @@ h1 {
 
 /*Fonctionnement*/
 
-.section-function__titre {
+.function__title {
     margin: 0 0 20px 22px;
 }
 
-.section-function{
+.function{
     font-weight: bold;
     font-size: 15px;
     display: flex;
@@ -72,7 +72,7 @@ h1 {
             width: 300px;
             max-height: 78px;
         }
-            .section-function__choice--number {
+            .function__number {
                 width: 18px;
                 height: 18px;
                 padding: 4px 4px;
@@ -90,7 +90,7 @@ h1 {
 
 /*Restaurants*/ 
 
-.section-restaurants {
+.restaurants {
     background-color: #f6f6f6;
         &__container {
             display: flex;
@@ -122,7 +122,7 @@ h1 {
                     border-top-right-radius: 20px;
                     object-fit: cover;
                 }
-                .section-restaurants__cardcontent {
+                .restaurants__cardcontent {
                     padding: 19px 11px;
                     position: relative;
                         h3 {

@@ -1,87 +1,117 @@
 .container-all {
     max-width: 2560px;
 }
+
 .photo__restaurant {
     img {
         width: 100%;
         max-height: 250px;
         object-fit: cover;
     }
-      }
+}
+
 .card__title {
     font-family: 'Shrikhand', cursive;
 }
+
 .fa-heart:before {
     margin-left: 20px;
 }
-.section__global {
+
+.card__global {
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-        
+
 }
-.section__card {
+
+.card {
     background-color: #F6F6F6;
     padding: 36px 21px;
-        .far {
-            align-self: flex-end;
-        }
-        h2 {
-            margin-bottom: 35px;
-        }
+    margin-top: -10px;
+
+    .far {
+        align-self: flex-end;
+    }
+
+    h2 {
+        margin-bottom: 35px;
+    }
 }
+
 .entrees {
     margin-bottom: 27px;
 }
-.section__carte--entrees {
-        h2 {
-            font-weight: normal;
-            font-size: 20px;
-        }
+
+.card__entrees {
+    h2 {
+        font-weight: normal;
+        font-size: 20px;
+    }
 }
-.section__carte--entrees--contenu {
+
+.card__contenu {
     display: flex;
     flex-direction: column;
     width: 250px;
+
     @media screen and (min-width: 375px) {
         margin-right: 50px;
         min-width: 250px;
         width: 100%;
     }
-        &--dish {
-            width: 300px;
-            margin-bottom: 25px;
-            background-color: #FFF;
-            box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-            border-radius: .75rem;
-            max-width: 100%;
-            padding: 14px 20px 14px 10px;
-            display: flex;
-            justify-content: space-between;
-            @media screen and (min-width: 375px) {
-                width: auto;
-            }
-            @media screen and (min-width: 1024px) {
-                margin-right: 40px;
-            }
-                &--price {
-                    align-self: flex-end;
-                    font-weight: bold;
-                }
-        }
 }
+
+.card__dish {
+    width: 300px;
+    margin-bottom: 25px;
+    background-color: #FFF;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    border-radius: .75rem;
+    max-width: 100%;
+    padding: 14px 20px 14px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 375px) {
+        width: auto;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 40px;
+    }
+}
+
+.card__price {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
 .header_menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-        h4 {
-            font-weight: normal;
-        }
+
+    h4 {
+        font-weight: normal;
+    }
 }
-.section__bouton--commander {
+
+.bouton__commander {
     padding: 30px 0 80px 0;
     text-align: center;
     background-color: #F6F6F6;
+
+    &--pink {
+        background-color: #ea72da;
+        padding: 22px 20px 22px 20px;
+        border-radius: 30px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 auto;
+    }
 }
