@@ -173,7 +173,7 @@ h1 {
     min-width: 280px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 695px) {
   .section-restaurants__card {
     margin-right: 25px;
   }
@@ -183,6 +183,7 @@ h1 {
   max-height: 175px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
 }
 .section-restaurants__card .section-restaurants__cardcontent {
   padding: 19px 11px;
@@ -227,6 +228,7 @@ h1 {
   .section__global {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -253,8 +255,6 @@ h1 {
 .section__carte--entrees--contenu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   width: 250px;
 }
 @media screen and (min-width: 375px) {
@@ -262,11 +262,6 @@ h1 {
     margin-right: 50px;
     min-width: 250px;
     width: 100%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .section__carte--entrees--contenu {
-    margin-right: 50px;
   }
 }
 .section__carte--entrees--contenu--dish {
@@ -279,6 +274,16 @@ h1 {
   padding: 14px 20px 14px 10px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 375px) {
+  .section__carte--entrees--contenu--dish {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section__carte--entrees--contenu--dish {
+    margin-right: 40px;
+  }
 }
 .section__carte--entrees--contenu--dish--price {
   align-self: flex-end;

@@ -112,7 +112,7 @@ h1 {
                 max-width: 330px;
                 min-width: 280px;
             }
-            @media screen and (min-width: 700px) {
+            @media screen and (min-width: 695px) {
                 margin-right: 25px;
             }
                 img {
@@ -120,6 +120,7 @@ h1 {
                     max-height: 175px;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
+                    object-fit: cover;
                 }
                 .section-restaurants__cardcontent {
                     padding: 19px 11px;

@@ -18,6 +18,7 @@
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
         
 }
@@ -43,18 +44,12 @@
 .section__carte--entrees--contenu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     width: 250px;
     @media screen and (min-width: 375px) {
         margin-right: 50px;
         min-width: 250px;
         width: 100%;
     }
-    @media screen and (min-width: 1024px) {
-        margin-right: 50px;
-    }
-    
         &--dish {
             width: 300px;
             margin-bottom: 25px;
@@ -65,6 +60,12 @@
             padding: 14px 20px 14px 10px;
             display: flex;
             justify-content: space-between;
+            @media screen and (min-width: 375px) {
+                width: auto;
+            }
+            @media screen and (min-width: 1024px) {
+                margin-right: 40px;
+            }
                 &--price {
                     align-self: flex-end;
                     font-weight: bold;
