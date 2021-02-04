@@ -26,20 +26,22 @@ h1 {
     background-color: #f6f6f6;
     padding: 40px 40px;
     margin-bottom: 50px;
-        &__book {
-            font-weight: bold;
-            font-size: 25px;
-        }
-        &__explore {
-            background-color: #ea72da;
-            padding: 22px 20px 22px 20px;
-            border-radius: 30px;
-            text-align: center;
-            color: #FFF;
-            font-weight: bold;
-            font-size: 20px;
-            margin: 0 auto;
-        }
+
+    &__book {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    &__explore {
+        background-color: #ea72da;
+        padding: 22px 20px 22px 20px;
+        border-radius: 30px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 auto;
+    }
 }
 
 /*Fonctionnement*/
@@ -48,7 +50,7 @@ h1 {
     margin: 0 0 20px 22px;
 }
 
-.function{
+.function {
     font-weight: bold;
     font-size: 15px;
     display: flex;
@@ -56,83 +58,95 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 15px;
-        h2 {
-            margin: 0 0 30px 0;
-        }
-        &__choice {
-            margin: 0 20px 20px 40px;
-            font-weight: bold;
-            background-color: #F6F6F6;
-            padding: 30px 50px 30px 18px;
-            margin-left: 20px;
-            text-align: center;
-            border-radius: 20px;
-            position: relative;
-            font-family: 'Roboto', sans-serif;
-            width: 300px;
-            max-height: 78px;
-        }
-            .function__number {
-                width: 18px;
-                height: 18px;
-                padding: 4px 4px;
-                border-radius: 50%;
-                background-color: $colour-primary;
-                color: #FFF;
-                position: absolute;
-                top: 30%;
-                left: -4%;
-            }
+
+    h2 {
+        margin: 0 0 30px 0;
+    }
+
+    &__choice {
+        margin: 0 20px 20px 40px;
+        font-weight: bold;
+        background-color: #F6F6F6;
+        padding: 30px 50px 30px 18px;
+        margin-left: 20px;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        width: 300px;
+        max-height: 78px;
+    }
+
+    .function__number {
+        width: 18px;
+        height: 18px;
+        padding: 4px 4px;
+        border-radius: 50%;
+        background-color: $colour-primary;
+        color: #FFF;
+        position: absolute;
+        top: 30%;
+        left: -4%;
+    }
 }
 
 
 
 
-/*Restaurants*/ 
+/*Restaurants*/
 
 .restaurants {
     background-color: #f6f6f6;
-        &__container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &__title {
-            padding: 50px 0 10px 22px;
-        }
-        &__card {
-            border-radius: 20px;
-            background-color: white;
-            margin-bottom: 18px;
-            position: relative;
-            max-width: 280px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__title {
+        padding: 50px 0 10px 22px;
+    }
+
+    &__card {
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 18px;
+        position: relative;
+        max-width: 280px;
+        min-width: 280px;
+
+        @media screen and (min-width: 375px) {
+            max-width: 330px;
             min-width: 280px;
-            @media screen and (min-width: 375px) {
-                max-width: 330px;
-                min-width: 280px;
-            }
-            @media screen and (min-width: 650px) {
-                margin-right: 25px;
-            }
-                img {
-                    width: 100%;
-                    max-height: 175px;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    object-fit: cover;
-                }
-                .restaurants__cardcontent {
-                    padding: 19px 11px;
-                    position: relative;
-                        h3 {
-                            margin-bottom: 6px;
-                        }
-                        .fa-heart {
-                            position: absolute;
-                        }
-                }
         }
+
+        @media screen and (min-width: 650px) {
+            margin-right: 25px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 175px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            object-fit: cover;
+        }
+
+        .restaurants__cardcontent {
+            padding: 19px 11px;
+            position: relative;
+
+            h3 {
+                margin-bottom: 6px;
+            }
+
+            .fa-heart {
+                position: absolute;
+            }
+        }
+    }
 
 }
 
