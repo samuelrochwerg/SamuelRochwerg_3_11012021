@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Base*/
 * {
   padding: 0;
   margin: 0;
@@ -134,7 +136,7 @@ h1 {
     min-width: 280px;
   }
 }
-@media screen and (min-width: 695px) {
+@media screen and (min-width: 650px) {
   .restaurants__card {
     margin-right: 25px;
   }
@@ -171,12 +173,14 @@ h1 {
   max-width: 2560px;
 }
 
+/*Bannière*/
 .photo__restaurant img {
   width: 100%;
   max-height: 250px;
   object-fit: cover;
 }
 
+/*Carte restaurant*/
 .card__title {
   font-family: "Shrikhand", cursive;
 }
@@ -263,6 +267,7 @@ h1 {
   font-weight: normal;
 }
 
+/*Bouton Commander*/
 .bouton__commander {
   padding: 30px 0 80px 0;
   text-align: center;
