@@ -1,7 +1,3 @@
-.container-all {
-    max-width: 1800px;
-}
-
 /*Bannière*/
 
 .photo__restaurant {
@@ -111,7 +107,7 @@
     background-color: #F6F6F6;
 
     &--pink {
-        background-color: #ea72da;
+        background-color: $colour-primary;
         padding: 22px 20px 22px 20px;
         border-radius: 30px;
         text-align: center;

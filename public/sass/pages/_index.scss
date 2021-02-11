@@ -1,3 +1,11 @@
+.container-all {
+    max-width: 2560px;
+    @media screen and (min-width: 1800px) {
+        max-width: 1800px;
+        margin: auto;
+    }
+
+}
 .fas {
     margin-right: 20px;
 }
@@ -33,7 +41,7 @@ h1 {
     }
 
     &__explore {
-        background-color: #ea72da;
+        background-color: $colour-primary;
         padding: 22px 20px 22px 20px;
         border-radius: 30px;
         text-align: center;
@@ -41,6 +49,9 @@ h1 {
         font-weight: bold;
         font-size: 20px;
         margin: 0 auto;
+        &:hover {
+            background-color: lighten($colour-primary, 5);
+        }
     }
 }
 
