@@ -41,7 +41,6 @@ h1 {
     }
 
     &__explore {
-        background-color: $colour-primary;
         padding: 22px 20px 22px 20px;
         border-radius: 30px;
         text-align: center;
@@ -49,8 +48,10 @@ h1 {
         font-weight: bold;
         font-size: 20px;
         margin: 0 auto;
+        background-image: linear-gradient($colour-primary,$colour-secondary);
+        transition: background-color 250ms;
         &:hover {
-            background-color: lighten($colour-primary, 5);
+            opacity: 0.8;
         }
     }
 }
