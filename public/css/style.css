@@ -97,7 +97,7 @@ h1 {
   width: 300px;
   max-height: 78px;
 }
-.function .function__number {
+.function__choice__number {
   width: 18px;
   height: 18px;
   padding: 4px 4px;
@@ -148,14 +148,14 @@ h1 {
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.restaurants__card .restaurants__cardcontent {
+.restaurants__card .restaurants__card__content {
   padding: 19px 11px;
   position: relative;
 }
-.restaurants__card .restaurants__cardcontent h3 {
+.restaurants__card .restaurants__card__content h3 {
   margin-bottom: 6px;
 }
-.restaurants__card .restaurants__cardcontent .fa-heart {
+.restaurants__card .restaurants__card__content .fa-heart {
   position: absolute;
 }
 
@@ -213,25 +213,25 @@ h1 {
   margin-bottom: 27px;
 }
 
-.card__entrees h2 {
+.card__global__entrees h2 {
   font-weight: normal;
   font-size: 20px;
 }
 
-.card__contenu {
+.card__global__contenu {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
 @media screen and (min-width: 375px) {
-  .card__contenu {
+  .card__global__contenu {
     margin-right: 50px;
     min-width: 250px;
     width: 100%;
   }
 }
 
-.card__dish {
+.card__global__contenu__dish {
   width: 300px;
   margin-bottom: 25px;
   background-color: #FFF;
@@ -243,12 +243,12 @@ h1 {
   justify-content: space-between;
 }
 @media screen and (min-width: 375px) {
-  .card__dish {
+  .card__global__contenu__dish {
     width: auto;
   }
 }
 @media screen and (min-width: 1024px) {
-  .card__dish {
+  .card__global__contenu__dish {
     margin-right: 40px;
   }
 }
@@ -331,7 +331,7 @@ footer h3 {
   color: #e6e6e6;
   font-weight: normal;
 }
-footer .footer-logo {
+footer .footer__logo {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   font-size: 20px;

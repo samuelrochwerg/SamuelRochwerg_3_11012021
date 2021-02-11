@@ -75,18 +75,17 @@ h1 {
         font-family: 'Roboto', sans-serif;
         width: 300px;
         max-height: 78px;
-    }
-
-    .function__number {
-        width: 18px;
-        height: 18px;
-        padding: 4px 4px;
-        border-radius: 50%;
-        background-color: $colour-primary;
-        color: #FFF;
-        position: absolute;
-        top: 30%;
-        left: -4%;
+        &__number {
+            width: 18px;
+            height: 18px;
+            padding: 4px 4px;
+            border-radius: 50%;
+            background-color: $colour-primary;
+            color: #FFF;
+            position: absolute;
+            top: 30%;
+            left: -4%;
+        }
     }
 }
 
@@ -134,7 +133,7 @@ h1 {
             object-fit: cover;
         }
 
-        .restaurants__cardcontent {
+        .restaurants__card__content {
             padding: 19px 11px;
             position: relative;
 
