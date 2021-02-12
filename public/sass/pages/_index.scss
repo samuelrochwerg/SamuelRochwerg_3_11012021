@@ -48,7 +48,7 @@ h1 {
         font-weight: bold;
         font-size: 20px;
         margin: 0 auto;
-        background-image: linear-gradient($colour-primary,$colour-secondary);
+        background-image: linear-gradient($colour-primary, $colour-secondary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
         &:hover {
@@ -154,14 +154,22 @@ h1 {
             h3 {
                 margin-bottom: 6px;
             }
-            .contenu__1 {
+            .restaurants_card__content__name {
                 position: relative;
             }
-            .contenu__2 {
+            .heart {
                 position: absolute;
+                box-sizing: border-box;
                 right: 20px;
                 top: 1;
+                .fa-heart:before {
+                    background-color: pink;
+                    transition: background-color .3s;
+                    &:hover {
+                        background-color: red;
+                    }
             }
+
         }
     }
 
@@ -175,4 +183,5 @@ h1 {
     position: absolute;
     top: 1rem;
     right: .75rem;
+}
 }

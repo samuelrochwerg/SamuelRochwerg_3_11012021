@@ -173,16 +173,23 @@ h1 {
 .restaurants__card .restaurants__card__content h3 {
   margin-bottom: 6px;
 }
-.restaurants__card .restaurants__card__content .contenu__1 {
+.restaurants__card .restaurants__card__content .restaurants_card__content__name {
   position: relative;
 }
-.restaurants__card .restaurants__card__content .contenu__2 {
+.restaurants__card .restaurants__card__content .heart {
   position: absolute;
+  box-sizing: border-box;
   right: 20px;
   top: 1;
 }
-
-.btn-new {
+.restaurants__card .restaurants__card__content .heart .fa-heart:before {
+  background-color: pink;
+  transition: background-color 0.3s;
+}
+.restaurants__card .restaurants__card__content .heart .fa-heart:before:hover {
+  background-color: red;
+}
+.restaurants .btn-new {
   background-color: #99E2D0;
   color: #1b6150;
   padding: 0.5rem;
