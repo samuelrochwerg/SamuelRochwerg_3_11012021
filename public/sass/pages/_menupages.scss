@@ -117,8 +117,10 @@
         margin: 0 auto;
         background-image: linear-gradient($colour-primary,$colour-secondary);
         transition: background-color 250ms;
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
         &:hover {
             opacity: 0.8;
+            box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
         }
     }
 }
