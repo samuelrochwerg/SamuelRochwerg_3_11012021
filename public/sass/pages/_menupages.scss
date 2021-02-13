@@ -43,13 +43,20 @@
 
 .entrees {
     margin-bottom: 27px;
+    h2::after {
+        content:'';
+        display: block;
+        width: 43px;
+        height: 3px;
+        background: $colour-tertiary;
+    }
 }
 
 .card__global__entrees {
     h2 {
         font-weight: normal;
-        font-size: 20px;
-    }
+        font-size: 20px;     
+        }
 }
 
 .card__global__contenu {

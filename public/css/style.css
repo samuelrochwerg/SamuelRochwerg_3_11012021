@@ -238,6 +238,13 @@ h1 {
 .entrees {
   margin-bottom: 27px;
 }
+.entrees h2::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 3px;
+  background: #99E2D0;
+}
 
 .card__global__entrees h2 {
   font-weight: normal;
