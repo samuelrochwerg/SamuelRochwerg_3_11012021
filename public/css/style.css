@@ -198,6 +198,13 @@ h1 {
   top: 1rem;
   right: 0.75rem;
 }
+.restaurants .icon__heart svg.heart {
+  width: 10px;
+  height: 10px;
+}
+.restaurants .icon__heart {
+  width: 10px;
+}
 
 /*Bannière*/
 .photo__restaurant img {
