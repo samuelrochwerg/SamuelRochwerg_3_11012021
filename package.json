@@ -4,7 +4,7 @@
   "description": "SamuelRochwerg_3_11012021",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./public/sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./public/sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
