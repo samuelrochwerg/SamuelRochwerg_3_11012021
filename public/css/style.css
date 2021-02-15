@@ -205,6 +205,9 @@ h1 {
 .restaurants .icon__heart {
   width: 10px;
 }
+.restaurants .test {
+  background-color: red;
+}
 
 /*Bannière*/
 .photo__restaurant img {
