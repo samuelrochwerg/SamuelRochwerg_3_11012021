@@ -24,7 +24,7 @@ p {
 }
 
 body {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .container-all {
