@@ -68,16 +68,21 @@ h1 {
   font-size: 25px;
 }
 .presentation__explore {
-  padding: 22px 20px 22px 20px;
+  padding: 15px 20px 15px 20px;
   border-radius: 30px;
   text-align: center;
   color: #FFF;
   font-weight: bold;
   font-size: 20px;
   margin: 0 auto;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 375px) {
+  .presentation__explore {
+    padding: 15px 5px 15px 5px;
+  }
 }
 .presentation__explore:hover {
   opacity: 0.8;
@@ -178,16 +183,8 @@ h1 {
 }
 .restaurants__card .restaurants__card__content .heart {
   position: absolute;
-  box-sizing: border-box;
   right: 20px;
   top: 1;
-}
-.restaurants__card .restaurants__card__content .heart .fa-heart:before {
-  background-color: pink;
-  transition: background-color 0.3s;
-}
-.restaurants__card .restaurants__card__content .heart .fa-heart:before:hover {
-  background-color: red;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -197,13 +194,6 @@ h1 {
   position: absolute;
   top: 1rem;
   right: 0.75rem;
-}
-.restaurants .icon__heart svg.heart {
-  width: 10px;
-  height: 10px;
-}
-.restaurants .icon__heart {
-  width: 10px;
 }
 
 /*Bannière*/
@@ -234,6 +224,9 @@ h1 {
   background-color: #F6F6F6;
   padding: 36px 21px;
   margin-top: -20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
 }
 .card .far {
   align-self: flex-end;
@@ -315,14 +308,14 @@ h1 {
 }
 .bouton__commander--pink {
   background-color: #9356DC;
-  padding: 22px 20px 22px 20px;
+  padding: 15px 47px 15px 47px;
   border-radius: 30px;
   text-align: center;
   color: #FFF;
   font-weight: bold;
   font-size: 20px;
   margin: 0 auto;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }

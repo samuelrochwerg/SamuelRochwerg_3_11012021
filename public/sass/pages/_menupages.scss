@@ -31,6 +31,9 @@
     background-color: #F6F6F6;
     padding: 36px 21px;
     margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
 
     .far {
         align-self: flex-end;
@@ -115,14 +118,14 @@
 
     &--pink {
         background-color: $colour-primary;
-        padding: 22px 20px 22px 20px;
+        padding: 15px 47px 15px 47px;
         border-radius: 30px;
         text-align: center;
         color: #FFF;
         font-weight: bold;
         font-size: 20px;
         margin: 0 auto;
-        background-image: linear-gradient($colour-primary,$colour-secondary);
+        background-image: linear-gradient($colour-secondary,$colour-primary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
         &:hover {

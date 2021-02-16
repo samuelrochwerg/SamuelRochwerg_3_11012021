@@ -41,16 +41,19 @@ h1 {
     }
 
     &__explore {
-        padding: 22px 20px 22px 20px;
+        padding: 15px 20px 15px 20px;
         border-radius: 30px;
         text-align: center;
         color: #FFF;
         font-weight: bold;
         font-size: 20px;
         margin: 0 auto;
-        background-image: linear-gradient($colour-primary, $colour-secondary);
+        background-image: linear-gradient($colour-secondary,$colour-primary) ;
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+        @media screen and (max-width: 375px){
+            padding: 15px 5px 15px 5px;
+        }
         &:hover {
             opacity: 0.8;
             box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
@@ -159,17 +162,8 @@ h1 {
             }
             .heart {
                 position: absolute;
-                box-sizing: border-box;
                 right: 20px;
                 top: 1;
-                .fa-heart:before {
-                    background-color: pink;
-                    transition: background-color .3s;
-                    &:hover {
-                        background-color: red;
-                    }
-            }
-
         }
     }
 
@@ -183,12 +177,5 @@ h1 {
     position: absolute;
     top: 1rem;
     right: .75rem;
-}
-.icon__heart svg.heart {
-    width: 10px;
-    height: 10px;
-}
-.icon__heart {
-    width: 10px;
 }
 }
