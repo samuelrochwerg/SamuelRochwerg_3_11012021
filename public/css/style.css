@@ -218,7 +218,7 @@ h1 {
 }
 .restaurants__card .restaurants__card__content .heart__2 {
   position: absolute;
-  top: 2px;
+  top: 0px;
   opacity: 0;
 }
 .restaurants__card .restaurants__card__content .heart__2:hover {
