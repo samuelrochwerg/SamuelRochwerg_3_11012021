@@ -149,7 +149,6 @@ h1 {
             border-top-right-radius: 20px;
             object-fit: cover;
         }
-
         .restaurants__card__content {
             padding: 19px 11px;
             position: relative;
@@ -160,10 +159,49 @@ h1 {
             .restaurants_card__content__name {
                 position: relative;
             }
+            @keyframes heart__full__opacity {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 0.5;
+                    color: $colour-primary;
+                }
+                100% {
+                    opacity: 1;
+                    color: $colour-primary;
+                }
+            }
+            @keyframes heart__empty__opacity1 {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
             .heart {
                 position: absolute;
                 right: 20px;
                 top: 1;
+                &__1 {
+                    position: relative;
+                    &:hover {
+                        animation: heart__empty__opacity1 1s;
+                    }
+                }
+                &__2 {
+                    position: absolute;
+                    top: 2px;
+                    opacity: 0;
+                    &:hover {
+                        animation: heart__full__opacity 1s forwards;
+                    }
+                }
         }
     }
 

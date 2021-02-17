@@ -181,10 +181,48 @@ h1 {
 .restaurants__card .restaurants__card__content .restaurants_card__content__name {
   position: relative;
 }
+@keyframes heart__full__opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    color: #9356DC;
+  }
+  100% {
+    opacity: 1;
+    color: #9356DC;
+  }
+}
+@keyframes heart__empty__opacity1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .restaurants__card .restaurants__card__content .heart {
   position: absolute;
   right: 20px;
   top: 1;
+}
+.restaurants__card .restaurants__card__content .heart__1 {
+  position: relative;
+}
+.restaurants__card .restaurants__card__content .heart__1:hover {
+  animation: heart__empty__opacity1 1s;
+}
+.restaurants__card .restaurants__card__content .heart__2 {
+  position: absolute;
+  top: 2px;
+  opacity: 0;
+}
+.restaurants__card .restaurants__card__content .heart__2:hover {
+  animation: heart__full__opacity 1s forwards;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
