@@ -124,6 +124,7 @@ h1 {
   color: #FFF;
   font-weight: normal;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
   margin: 0 auto;
   background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
@@ -419,6 +420,7 @@ h1 {
   padding: 15px 47px 15px 47px;
   border-radius: 30px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   color: #FFF;
   font-weight: normal;
   font-size: 20px;
