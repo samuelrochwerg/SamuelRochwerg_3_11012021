@@ -55,7 +55,28 @@
     }
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+
 .card__global__entrees {
+    animation: fadein 2s;
+}
+
+.card__global__plats {
+    animation: fadein 4s;
+}
+
+.card__global__desserts {
+    animation: fadein 6s;
+}
+
+.card__global__entrees, .card__global__plats, .card__global__desserts {
     h2 {
         font-weight: normal;
         font-size: 20px;     
