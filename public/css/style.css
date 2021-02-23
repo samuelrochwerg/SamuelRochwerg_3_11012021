@@ -233,11 +233,15 @@ h1 {
   }
   50% {
     opacity: 0.5;
-    color: #9356DC;
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     opacity: 1;
-    color: #9356DC;
+    background-image: 100deg, #9356DC, #FF79DA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 @keyframes heart__empty__opacity1 {
@@ -356,9 +360,14 @@ h1 {
 }
 
 .card__global__contenu {
+  background-color: #FFF;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
   display: flex;
-  flex-direction: column;
-  width: 250px;
+  justify-content: space-between;
+  overflow: hidden;
 }
 @media screen and (min-width: 375px) {
   .card__global__contenu {
@@ -371,43 +380,21 @@ h1 {
 .card__global__contenu__dish {
   width: 300px;
   margin-bottom: 25px;
-  background-color: #FFF;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
-  max-width: 100%;
-  padding: 14px 20px 14px 10px;
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 375px) {
-  .card__global__contenu__dish {
-    width: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .card__global__contenu__dish {
-    margin-right: 40px;
-  }
-}
 
-@keyframes check {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .card__global__contenu__dish__confirmation {
   background-color: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  animation: check 1s;
+  margin-right: 0px;
 }
 
 .circle {

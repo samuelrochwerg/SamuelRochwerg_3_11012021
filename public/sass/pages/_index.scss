@@ -222,11 +222,15 @@ h1 {
                 }
                 50% {
                     opacity: 0.5;
-                    color: $colour-primary;
+                    background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
                 100% {
                     opacity: 1;
-                    color: $colour-primary;
+                    background-image: (100deg, $colour-primary, $colour-secondary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
             @keyframes heart__empty__opacity1 {
