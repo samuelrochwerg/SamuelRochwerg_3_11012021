@@ -371,7 +371,7 @@ h1 {
 }
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
-  transition: margin-right 2s ease-in-out;
+  transition: margin-right 2s;
 }
 .card__global__contenu:hover h3 {
   padding-top: 16px;
@@ -386,7 +386,7 @@ h1 {
 
 .card__global__contenu__dish {
   width: 300px;
-  margin-bottom: 25px;
+  padding: 14px 0;
   border-radius: 0.75rem;
   display: flex;
   justify-content: space-between;
