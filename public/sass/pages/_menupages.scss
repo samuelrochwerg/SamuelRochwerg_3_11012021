@@ -86,12 +86,22 @@
 .card__global__contenu {
     background-color: #FFF;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    padding: 1rem;
+    padding: 0 0 0 16px;
     border-radius: .75rem;
     margin: 1rem 0;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    
+    &:hover {
+        .card__global__contenu__dish__confirmation {
+            margin-right: 0px;
+            transition: margin-right 2s ease-in-out;
+        }
+    h3 {
+        padding-top: 16px;
+    }
+    }
 
     @media screen and (min-width: 375px) {
         margin-right: 50px;
@@ -111,13 +121,12 @@
 .card__global__contenu__dish__confirmation {
     background-color: #99E2D0;
     width: 4rem;
-    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-right: 0px;
+    margin-right: -64px;
 }
 
 .circle {
@@ -127,6 +136,8 @@
     background: #FFF;
     color: $colour-tertiary;
     display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .card__price {

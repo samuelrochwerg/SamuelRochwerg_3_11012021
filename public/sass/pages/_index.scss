@@ -252,7 +252,7 @@ h1 {
                 &__1 {
                     position: relative;
                     &:hover {
-                        animation: heart__empty__opacity1 1s;
+                        animation: heart__empty__opacity1 2s;
                     }
                 }
                 &__2 {
@@ -260,7 +260,7 @@ h1 {
                     top: 0px;
                     opacity: 0;
                     &:hover {
-                        animation: heart__full__opacity 1s forwards;
+                        animation: heart__full__opacity 2s;
                     }
                 }
         }

@@ -264,7 +264,7 @@ h1 {
   position: relative;
 }
 .restaurants__card .restaurants__card__content .heart__1:hover {
-  animation: heart__empty__opacity1 1s;
+  animation: heart__empty__opacity1 2s;
 }
 .restaurants__card .restaurants__card__content .heart__2 {
   position: absolute;
@@ -272,7 +272,7 @@ h1 {
   opacity: 0;
 }
 .restaurants__card .restaurants__card__content .heart__2:hover {
-  animation: heart__full__opacity 1s forwards;
+  animation: heart__full__opacity 2s;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -362,12 +362,19 @@ h1 {
 .card__global__contenu {
   background-color: #FFF;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0 0 0 16px;
   border-radius: 0.75rem;
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+}
+.card__global__contenu:hover .card__global__contenu__dish__confirmation {
+  margin-right: 0px;
+  transition: margin-right 2s ease-in-out;
+}
+.card__global__contenu:hover h3 {
+  padding-top: 16px;
 }
 @media screen and (min-width: 375px) {
   .card__global__contenu {
@@ -388,13 +395,12 @@ h1 {
 .card__global__contenu__dish__confirmation {
   background-color: #99E2D0;
   width: 4rem;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-right: 0px;
+  margin-right: -64px;
 }
 
 .circle {
@@ -404,6 +410,8 @@ h1 {
   background: #FFF;
   color: #99E2D0;
   display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .card__price {
