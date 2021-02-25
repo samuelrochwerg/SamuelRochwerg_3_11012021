@@ -314,7 +314,6 @@ h1 {
   margin-top: -20px;
   position: relative;
   z-index: 1;
-  border-radius: 20px;
 }
 .card .far {
   align-self: flex-end;
@@ -361,7 +360,8 @@ h1 {
 
 .card__global__contenu {
   background-color: #FFF;
-  max-width: 310px;
+  max-width: 350px;
+  height: 70px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   padding: 0 0 0 16px;
   border-radius: 0.75rem;
@@ -371,7 +371,7 @@ h1 {
   overflow: hidden;
 }
 .card__global__contenu__dish {
-  width: 300px;
+  width: 350px;
   padding: 14px 0;
   border-radius: 0.75rem;
   display: flex;
@@ -379,10 +379,12 @@ h1 {
 }
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
-  transition: margin-right 2s;
+  transition: margin-right 0.5s;
 }
-.card__global__contenu:hover h3 {
-  padding-top: 16px;
+.card__global__contenu:hover .header_menu {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (min-width: 375px) {
   .card__global__contenu {
@@ -401,29 +403,30 @@ h1 {
 }
 
 .circle {
-  width: 25px;
-  height: 25px;
-  border-radius: 20px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100px;
   background: #FFF;
   color: #99E2D0;
   display: flex;
   align-items: center;
   align-content: center;
+  align-self: center;
 }
 
 .card__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   align-self: flex-end;
   font-weight: bold;
   margin-right: 20px;
 }
 
-.header_menu {
+.header_menu h3, .header_menu h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .header_menu h4 {
   font-weight: normal;
