@@ -98,17 +98,21 @@
         border-radius: .75rem;
         display: flex;
         justify-content: space-between;
+            h3 {
+                font-size: 16px;
+            }
         }
     
     &:hover {
         .card__global__contenu__dish__confirmation {
             margin-right: 0px;
+            width: 25%;
             transition: margin-right 0.5s;
         }
         .header_menu {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         
     }
@@ -149,9 +153,14 @@
     align-self: flex-end;
     font-weight: bold;
     margin-right: 20px;
+    width: 25%;
 }
 
 .header_menu {
+            width: 75%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
     h3, h4 {
         display: flex;
         flex-direction: column;
