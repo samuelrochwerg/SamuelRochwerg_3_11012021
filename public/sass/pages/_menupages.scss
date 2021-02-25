@@ -85,6 +85,7 @@
 
 .card__global__contenu {
     background-color: #FFF;
+    max-width: 310px;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     padding: 0 0 0 16px;
     border-radius: .75rem;
@@ -92,6 +93,13 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    &__dish {
+        width: 300px;
+        padding: 14px 0;
+        border-radius: .75rem;
+        display: flex;
+        justify-content: space-between;
+        }
     
     &:hover {
         .card__global__contenu__dish__confirmation {
@@ -104,19 +112,12 @@
     }
 
     @media screen and (min-width: 375px) {
-        margin-right: 50px;
         min-width: 250px;
         width: 100%;
     }
 }
 
-.card__global__contenu__dish {
-    width: 300px;
-    padding: 14px 0;
-    border-radius: .75rem;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .card__global__contenu__dish__confirmation {
     background-color: #99E2D0;
@@ -124,8 +125,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     margin-right: -64px;
 }
 
@@ -143,12 +142,16 @@
 .card__price {
     align-self: flex-end;
     font-weight: bold;
+    margin-right: 20px;
 }
 
 .header_menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
     h4 {
         font-weight: normal;
