@@ -264,15 +264,16 @@ h1 {
   position: relative;
 }
 .restaurants__card .restaurants__card__content .heart__1:hover {
-  animation: heart__empty__opacity1 2s;
+  animation: heart__empty__opacity1 1s forwards;
 }
 .restaurants__card .restaurants__card__content .heart__2 {
   position: absolute;
   top: 0px;
   opacity: 0;
+  color: #FFF;
 }
 .restaurants__card .restaurants__card__content .heart__2:hover {
-  animation: heart__full__opacity 2s;
+  animation: heart__full__opacity 3s forwards;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -380,6 +381,9 @@ h1 {
 .card__global__contenu__dish h3 {
   font-size: 16px;
 }
+.card__global__contenu__dish h4 {
+  font-size: 16px;
+}
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
   width: 25%;
@@ -389,6 +393,9 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.card__global__contenu:hover .circle {
+  transform: rotate(360deg);
 }
 @media screen and (min-width: 375px) {
   .card__global__contenu {
@@ -414,8 +421,9 @@ h1 {
   color: #99E2D0;
   display: flex;
   align-items: center;
-  align-content: center;
   align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
 }
 
 .card__price {
@@ -430,6 +438,9 @@ h1 {
 
 .header_menu {
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

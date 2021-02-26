@@ -252,15 +252,16 @@ h1 {
                 &__1 {
                     position: relative;
                     &:hover {
-                        animation: heart__empty__opacity1 2s;
+                        animation: heart__empty__opacity1 1s forwards;
                     }
                 }
                 &__2 {
                     position: absolute;
                     top: 0px;
                     opacity: 0;
+                    color: #FFF;
                     &:hover {
-                        animation: heart__full__opacity 2s;
+                        animation: heart__full__opacity 3s forwards;
                     }
                 }
         }
