@@ -64,10 +64,16 @@
 
 .card__global__entrees {
     animation: fadein 2s;
+    @media screen and (min-width: 1142px){
+        margin-right: 10px;
+    }
 }
 
 .card__global__plats {
     animation: fadein 4s;
+    @media screen and (min-width: 1142px){
+        margin-right: 10px;
+    }
 }
 
 .card__global__desserts {
