@@ -392,13 +392,18 @@ h1 {
 }
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
-  width: 25%;
+  min-width: 4rem;
   transition: margin-right 0.5s;
 }
 .card__global__contenu:hover .header_menu {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+@media screen and (max-width: 405px) {
+  .card__global__contenu:hover .header_menu {
+    max-width: 130px;
+  }
 }
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
@@ -412,7 +417,7 @@ h1 {
 
 .card__global__contenu__dish__confirmation {
   background-color: #99E2D0;
-  width: 4rem;
+  min-width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,8 +460,12 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
+}
+@media screen and (max-width: 405px) {
+  .header_menu {
+    overflow: hidden;
+  }
 }
 .header_menu h3, .header_menu h4 {
   display: flex;
