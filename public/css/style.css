@@ -396,6 +396,7 @@ h1 {
   transition: margin-right 0.5s;
 }
 .card__global__contenu:hover .header_menu {
+  max-width: 230px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

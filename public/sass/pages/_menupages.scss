@@ -117,6 +117,7 @@
             transition: margin-right 0.5s;
         }
         .header_menu {
+            max-width: 230px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
