@@ -149,6 +149,12 @@ h1 {
         font-family: 'Roboto', sans-serif;
         width: 300px;
         max-height: 78px;
+        &:hover {
+            background-color: #f5edff;
+            .fas {
+                color: $colour-primary;
+            }
+        }
         &__number {
             width: 18px;
             height: 18px;

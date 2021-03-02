@@ -165,6 +165,12 @@ h1 {
   width: 300px;
   max-height: 78px;
 }
+.function__choice:hover {
+  background-color: #f5edff;
+}
+.function__choice:hover .fas {
+  color: #9356DC;
+}
 .function__choice__number {
   width: 18px;
   height: 18px;
@@ -408,9 +414,9 @@ h1 {
 }
 .card__global__contenu:hover .header_menu {
   max-width: 230px;
-  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 405px) {
   .card__global__contenu:hover .header_menu {

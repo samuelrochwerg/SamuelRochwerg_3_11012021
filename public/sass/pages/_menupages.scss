@@ -124,9 +124,9 @@
         }
         .header_menu {
             max-width: 230px;
-            text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            text-overflow: ellipsis;
             @media screen and (max-width:405px){
                 max-width: 130px;
             }
@@ -194,7 +194,6 @@
             @media screen and (max-width: 405px){
                 overflow: hidden;
             }
-
     h4 {
         font-weight: normal;
     }
