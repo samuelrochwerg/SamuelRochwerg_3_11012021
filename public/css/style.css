@@ -270,7 +270,7 @@ h1 {
   position: relative;
 }
 .restaurants__card .restaurants__card__content .heart__1:hover {
-  animation: heart__empty__opacity1 3s forwards;
+  animation: heart__empty__opacity1 3s;
 }
 .restaurants__card .restaurants__card__content .heart__2 {
   position: absolute;
@@ -279,8 +279,7 @@ h1 {
   color: #FFF;
 }
 .restaurants__card .restaurants__card__content .heart__2:hover {
-  animation: heart__full__opacity 3s;
-  animation-fill-mode: forwards;
+  animation: heart__full__opacity 3s forwards;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -371,7 +370,9 @@ h1 {
   animation: fadein 6s;
 }
 
-.card__global__entrees h2, .card__global__plats h2, .card__global__desserts h2 {
+.card__global__entrees h2,
+.card__global__plats h2,
+.card__global__desserts h2 {
   font-weight: normal;
   font-size: 20px;
 }
@@ -486,19 +487,15 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .header_menu h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 .header_menu h4 {
   font-weight: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 /*Bouton Commander*/

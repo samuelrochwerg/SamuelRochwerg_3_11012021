@@ -33,6 +33,7 @@
     margin-top: -20px;
     position: relative;
     z-index: 1;
+
     .far {
         align-self: flex-end;
     }
@@ -44,8 +45,9 @@
 
 .entrees {
     margin-bottom: 27px;
+
     h2::after {
-        content:'';
+        content: '';
         display: block;
         width: 43px;
         height: 3px;
@@ -57,21 +59,24 @@
     0% {
         opacity: 0;
     }
+
     100% {
-        opacity : 1;
+        opacity: 1;
     }
 }
 
 .card__global__entrees {
     animation: fadein 2s;
-    @media screen and (min-width: 1142px){
+
+    @media screen and (min-width: 1142px) {
         margin-right: 10px;
     }
 }
 
 .card__global__plats {
     animation: fadein 4s;
-    @media screen and (min-width: 1142px){
+
+    @media screen and (min-width: 1142px) {
         margin-right: 10px;
     }
 }
@@ -80,11 +85,13 @@
     animation: fadein 6s;
 }
 
-.card__global__entrees, .card__global__plats, .card__global__desserts {
+.card__global__entrees,
+.card__global__plats,
+.card__global__desserts {
     h2 {
         font-weight: normal;
-        font-size: 20px;     
-        }
+        font-size: 20px;
+    }
 }
 
 .card__global__contenu {
@@ -98,52 +105,61 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    @media screen and (min-width: 375px) and (max-width: 400px){
+
+    @media screen and (min-width: 375px) and (max-width: 400px) {
         min-width: 250px;
         max-width: 315px;
     }
+
     &__dish {
         width: 350px;
         padding: 14px 0;
         border-radius: .75rem;
         display: flex;
         justify-content: space-between;
-            h3 {
-                font-size: 16px;
-            }
-            h4 {
-                font-size: 16px;
-            }
+
+        h3 {
+            font-size: 16px;
         }
-    
+
+        h4 {
+            font-size: 16px;
+        }
+    }
+
     &:hover {
         .card__global__contenu__dish__confirmation {
             margin-right: 0px;
             min-width: 4rem;
             transition: margin-right 0.5s;
         }
+
         .header_menu {
             white-space: nowrap;
             text-overflow: ellipsis;
+
             h3 {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
             }
+
             h4 {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
             }
-            @media screen and (max-width:405px){
+
+            @media screen and (max-width:405px) {
                 max-width: 130px;
             }
 
         }
+
         .circle {
             transform: rotate(360deg);
         }
-        
+
     }
 
     @media screen and (min-width: 375px) {
@@ -174,10 +190,12 @@
     align-self: center;
     align-content: center;
     transition: transform 0.5s;
-        .fas {
-            margin-left: 4px;
-        }
+
+    .fas {
+        margin-left: 4px;
+    }
 }
+
 .center {
     text-align: center;
 }
@@ -193,24 +211,22 @@
 }
 
 .header_menu {
-            width: 230px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            h3 {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-            h4 {
-                font-weight: normal;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+
+    h3 {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    h4 {
+        font-weight: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
 
 /*Bouton Commander*/
@@ -230,9 +246,10 @@
         font-weight: normal;
         font-size: 18px;
         margin: 0 auto;
-        background-image: linear-gradient($colour-secondary,$colour-primary);
+        background-image: linear-gradient($colour-secondary, $colour-primary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+
         &:hover {
             opacity: 0.8;
             box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);

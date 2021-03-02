@@ -1,11 +1,13 @@
 .container-all {
     max-width: 2560px;
+
     @media screen and (min-width: 1800px) {
         max-width: 1800px;
         margin: auto;
     }
 
 }
+
 .fas {
     margin-right: 20px;
 }
@@ -16,12 +18,12 @@ h1 {
 }
 
 
-/*Loader*/ 
+/*Loader*/
 
 .loader {
     width: 100%;
     height: 100%;
-    position:fixed;
+    position: fixed;
     background-color: #FFF;
     left: 0;
     top: 0;
@@ -29,7 +31,7 @@ h1 {
     animation: loader 3s forwards;
 }
 
-/*Animation loader*/ 
+/*Animation loader*/
 
 @keyframes loader {
     0% {
@@ -37,7 +39,7 @@ h1 {
     }
 
     100% {
-        opacity : 0;
+        opacity: 0;
         z-index: -10;
     }
 }
@@ -51,7 +53,7 @@ h1 {
     height: 100px;
     animation: spin 3s linear forwards;
 
-    /*Placement du loader au milieu de la page*/ 
+    /*Placement du loader au milieu de la page*/
 
     margin: auto;
     position: absolute;
@@ -61,13 +63,14 @@ h1 {
     bottom: 0;
 }
 
-/*Animation du loader circle*/ 
+/*Animation du loader circle*/
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
         opacity: 1;
     }
+
     100% {
         transform: rotate(360deg);
         opacity: 0;
@@ -108,9 +111,10 @@ h1 {
         font-size: 15px;
         font-family: "Roboto", sans-serif;
         margin: 0 auto;
-        background-image: linear-gradient($colour-secondary,$colour-primary) ;
+        background-image: linear-gradient($colour-secondary, $colour-primary);
         transition: background-color 250ms;
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+
         &:hover {
             opacity: 0.8;
             box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
@@ -149,12 +153,15 @@ h1 {
         font-family: 'Roboto', sans-serif;
         width: 300px;
         max-height: 78px;
+
         &:hover {
             background-color: #f5edff;
+
             .fas {
                 color: $colour-primary;
             }
         }
+
         &__number {
             width: 18px;
             height: 18px;
@@ -212,26 +219,32 @@ h1 {
             border-top-right-radius: 20px;
             object-fit: cover;
         }
+
         .restaurants__card__content {
             padding: 19px 11px;
             position: relative;
             display: flex;
+
             h3 {
                 margin-bottom: 6px;
             }
+
             .restaurants_card__content__name {
                 position: relative;
             }
+
             @keyframes heart__full__opacity {
                 0% {
                     opacity: 0;
                 }
+
                 50% {
                     opacity: 0.5;
                     background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+
                 100% {
                     opacity: 1;
                     background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
@@ -239,13 +252,16 @@ h1 {
                     -webkit-text-fill-color: transparent;
                 }
             }
+
             @keyframes heart__empty__opacity1 {
                 0% {
                     opacity: 1;
                 }
+
                 50% {
                     opacity: 0;
                 }
+
                 100% {
                     opacity: 0;
                 }
@@ -255,34 +271,37 @@ h1 {
                 position: absolute;
                 right: 20px;
                 top: 1;
+
                 &__1 {
                     position: relative;
+
                     &:hover {
-                        animation: heart__empty__opacity1 3s forwards;
+                        animation: heart__empty__opacity1 3s;
                     }
                 }
+
                 &__2 {
                     position: absolute;
                     top: 0px;
                     opacity: 0;
                     color: #FFF;
+
                     &:hover {
-                        animation: heart__full__opacity 3s;
-                        animation-fill-mode: forwards;
+                        animation: heart__full__opacity 3s forwards;
                     }
                 }
+            }
         }
+
     }
 
-}
-
-.btn-new {
-    background-color: $colour-tertiary;
-    color: #1b6150;
-    padding: .5rem;
-    border-radius: .125rem;
-    position: absolute;
-    top: 1rem;
-    right: .75rem;
-}
+    .btn-new {
+        background-color: $colour-tertiary;
+        color: #1b6150;
+        padding: .5rem;
+        border-radius: .125rem;
+        position: absolute;
+        top: 1rem;
+        right: .75rem;
+    }
 }
