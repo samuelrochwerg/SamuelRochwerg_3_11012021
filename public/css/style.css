@@ -413,7 +413,6 @@ h1 {
   transition: margin-right 0.5s;
 }
 .card__global__contenu:hover .header_menu {
-  max-width: 230px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -473,12 +472,13 @@ h1 {
 }
 
 .header_menu {
-  max-width: 230px;
+  width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (max-width: 405px) {
   .header_menu {
