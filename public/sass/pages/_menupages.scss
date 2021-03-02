@@ -123,9 +123,18 @@
             transition: margin-right 0.5s;
         }
         .header_menu {
-            overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            h3 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            h4 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
             @media screen and (max-width:405px){
                 max-width: 130px;
             }
@@ -191,12 +200,17 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            @media screen and (max-width: 405px){
+            h3 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
                 overflow: hidden;
             }
-    h4 {
-        font-weight: normal;
-    }
+            h4 {
+                font-weight: normal;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
 }
 
 /*Bouton Commander*/
