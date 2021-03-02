@@ -4,7 +4,8 @@
   "description": "SamuelRochwerg_3_11012021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./public/sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./public/sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/samuelrochwerg/SamuelRochwerg_3_11012021/issues"
   },
