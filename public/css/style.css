@@ -239,7 +239,7 @@ h1 {
   }
   100% {
     opacity: 1;
-    background-image: 100deg, #9356DC, #FF79DA;
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -264,7 +264,7 @@ h1 {
   position: relative;
 }
 .restaurants__card .restaurants__card__content .heart__1:hover {
-  animation: heart__empty__opacity1 1s forwards;
+  animation: heart__empty__opacity1 3s forwards;
 }
 .restaurants__card .restaurants__card__content .heart__2 {
   position: absolute;
@@ -273,7 +273,8 @@ h1 {
   color: #FFF;
 }
 .restaurants__card .restaurants__card__content .heart__2:hover {
-  animation: heart__full__opacity 3s forwards;
+  animation: heart__full__opacity 3s;
+  animation-fill-mode: forwards;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
@@ -477,11 +478,6 @@ h1 {
   .header_menu {
     overflow: hidden;
   }
-}
-.header_menu h3, .header_menu h4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .header_menu h4 {
   font-weight: normal;
