@@ -12,6 +12,7 @@
 
 .card__title {
     font-family: 'Shrikhand', cursive;
+    max-width: 322px;
 }
 
 .fa-heart:before {
@@ -24,13 +25,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
 }
 
 .card {
     background-color: #F6F6F6;
     padding: 36px 21px;
-    margin-top: -20px;
+    margin-top: -27px;
+    border-radius: 30px;
     position: relative;
     z-index: 1;
 
@@ -68,7 +69,7 @@
 .card__global__entrees {
     animation: fadein 2s;
 
-    @media screen and (min-width: 1142px) {
+    @media screen and (min-width: 1140px) {
         margin-right: 10px;
     }
 }
@@ -110,6 +111,9 @@
         min-width: 250px;
         max-width: 315px;
     }
+    // @media screen and (min-width: 425px) and (max-width: 1024px) {
+    //     max-width: none;
+    // }
 
     &__dish {
         width: 350px;

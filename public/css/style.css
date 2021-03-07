@@ -301,6 +301,7 @@ h1 {
 /*Carte restaurant*/
 .card__title {
   font-family: "Shrikhand", cursive;
+  max-width: 322px;
 }
 
 .fa-heart:before {
@@ -318,7 +319,8 @@ h1 {
 .card {
   background-color: #F6F6F6;
   padding: 36px 21px;
-  margin-top: -20px;
+  margin-top: -27px;
+  border-radius: 30px;
   position: relative;
   z-index: 1;
 }
@@ -351,7 +353,7 @@ h1 {
 .card__global__entrees {
   animation: fadein 2s;
 }
-@media screen and (min-width: 1142px) {
+@media screen and (min-width: 1140px) {
   .card__global__entrees {
     margin-right: 10px;
   }
