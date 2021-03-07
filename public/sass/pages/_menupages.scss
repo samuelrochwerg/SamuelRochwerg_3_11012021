@@ -107,13 +107,13 @@
     justify-content: space-between;
     overflow: hidden;
 
-    @media screen and (min-width: 375px) and (max-width: 400px) {
-        min-width: 250px;
-        max-width: 315px;
-    }
-    // @media screen and (min-width: 425px) and (max-width: 1024px) {
-    //     max-width: none;
+    // @media screen and (min-width: 375px) and (max-width: 400px) {
+    //     min-width: 250px;
+    //     max-width: 315px;
     // }
+    @media screen and (min-width: 400px) and (max-width: 1024px) {
+        max-width: none;
+    }
 
     &__dish {
         width: 350px;
@@ -179,10 +179,10 @@
 
     }
 
-    @media screen and (min-width: 375px) {
-        min-width: 250px;
-        width: 100%;
-    }
+    // @media screen and (min-width: 375px) {
+    //     min-width: 250px;
+    //     width: 100%;
+    // }
 }
 
 

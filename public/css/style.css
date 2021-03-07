@@ -391,10 +391,9 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 1024px) {
   .card__global__contenu {
-    min-width: 250px;
-    max-width: 315px;
+    max-width: none;
   }
 }
 .card__global__contenu__dish {
@@ -448,12 +447,6 @@ h1 {
 }
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
-}
-@media screen and (min-width: 375px) {
-  .card__global__contenu {
-    min-width: 250px;
-    width: 100%;
-  }
 }
 
 .card__global__contenu__dish__confirmation {
