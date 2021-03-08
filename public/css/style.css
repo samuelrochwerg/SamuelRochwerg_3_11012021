@@ -320,7 +320,8 @@ h1 {
   background-color: #F6F6F6;
   padding: 36px 21px;
   margin-top: -27px;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   position: relative;
   z-index: 1;
 }
