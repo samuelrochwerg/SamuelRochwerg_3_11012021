@@ -38,7 +38,7 @@ Pages de menu (x4)
 
 Footer
 
--Le footer est identique sur toutes les pages.
+- Le footer est identique sur toutes les pages.
 - Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
 
 Header
@@ -49,7 +49,7 @@ Header
 
 Effets graphiques et animations
 
--Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
+- Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
 les animations ou transitions CSS, pas de JavaScript ni de librairie.
 
 Boutons
